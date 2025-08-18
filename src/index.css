@@ -2,39 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Professional Corporate Design System for RO Group
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 28% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 28% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 28% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Corporate Navy Blue Theme */
+    --primary: 215 84% 15%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 215 84% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 25% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 100% 62%;
+    --accent-foreground: 215 84% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 20% 91%;
+    --input: 215 20% 91%;
+    --ring: 215 84% 15%;
+
+    /* Corporate Design Tokens */
+    --corporate-navy: 215 84% 15%;
+    --corporate-navy-light: 215 50% 25%;
+    --corporate-gold: 45 100% 62%;
+    --corporate-gold-light: 45 100% 85%;
+    --corporate-gray: 215 15% 40%;
+    --corporate-gray-light: 215 15% 95%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--corporate-navy)), hsl(var(--corporate-navy-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--corporate-navy)) 0%, hsl(var(--corporate-navy-light)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--corporate-gold)) 0%, hsl(var(--corporate-gold-light)) 100%);
+
+    /* Shadows */
+    --shadow-corporate: 0 10px 40px -15px hsl(var(--corporate-navy) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(var(--corporate-navy) / 0.1);
+    --shadow-elegant: 0 20px 60px -20px hsl(var(--corporate-navy) / 0.15);
 
     --radius: 0.5rem;
 
