@@ -1,0 +1,42 @@
+export interface TeamMember {
+  name: string;
+  position: string;
+}
+
+export interface Venture {
+  name: string;
+  slug: string;
+  headline: string;
+  about: string;
+  keyFacts: {
+    established: string;
+    location?: string;
+    network?: string;
+    annualSales?: string;
+    teamSize: string;
+    manufacturing?: string;
+    showrooms?: string;
+  };
+  team: TeamMember[];
+}
+
+export const ventures: Venture[] = [
+  {
+    name: "Rider's Option",
+    slug: "riders-option",
+    headline: "The Original Venture, Still Leading the Way",
+    about: "Rider's Option is where it all began. Established in 2017, it is a premier bike servicing center in Dhaka, also offering a reliable parcel service. It stands as a symbol of our commitment to quality service.",
+    keyFacts: {
+      established: "2017",
+      location: "Moddho Badda, Dhaka",
+      annualSales: "70-80 Lakh BDT",
+      teamSize: "15+ Employees"
+    },
+    team: [
+      { name: "KHALAD MAHMUD AUNTER", position: "Incharge Officer" },
+      { name: "MD. AL AMIN SOHAG", position: "Manager" },
+      { name: "ALAMGIR HOSSAIN", position: "Manager" }
+    ]
+  },
+  // ... Add other ventures similarly
+];

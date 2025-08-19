@@ -72,6 +72,16 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Venture Colors */
+    --venture-riders: 215 84% 60%;
+    --venture-courier: 142 70% 45%;
+    --venture-furnito: 30 84% 55%;
+    --venture-mart: 345 84% 55%;
+
+    /* Additional Gradients */
+    --gradient-venture-riders: linear-gradient(135deg, hsl(var(--venture-riders)) 0%, hsl(var(--venture-riders)) 100%);
+    --gradient-venture-courier: linear-gradient(135deg, hsl(var(--venture-courier)) 0%, hsl(var(--venture-courier)) 100%);
   }
 
   .dark {
