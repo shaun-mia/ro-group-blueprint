@@ -1,18 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { ventures } from "@/data/ventures";
 
 const VenturesGrid = () => {
-  const ventures = [
-    { name: "Rider's Option", desc: "Bike servicing & logistics", slug: "riders-option" },
-    { name: "RO Courier", desc: "Express delivery services", slug: "ro-courier" },
-    { name: "Furnito", desc: "Premium furniture manufacturing", slug: "furnito" },
-    { name: "RO Mart", desc: "E-commerce platform", slug: "ro-mart" },
-    { name: "Wholesale Mart", desc: "Bulk distribution", slug: "wholesale-mart" },
-    { name: "Lotto", desc: "Franchise retail outlets", slug: "lotto" },
-    { name: "Shawapnadip", desc: "Park & resort hospitality", slug: "shawapnadip" },
-    { name: "Food Pavilion", desc: "Food & beverage", slug: "food-pavilion" }
-  ];
-
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -21,14 +11,14 @@ const VenturesGrid = () => {
             A Diverse Family of Brands
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Discover the innovative companies that make up RO Group. Each brand is a leader in its sector, 
+            Discover the innovative companies that make up RO Group. Each brand is a leader in its sector,
             dedicated to excellence and customer satisfaction.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {ventures.map((venture) => (
-            <Card key={venture.slug} className="p-6 hover:shadow-card transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
+            <Card key={venture.slug} className="p-6 hover:shadow-card transition-all duration-300">
               <Link to={`/ventures/${venture.slug}`} className="block">
                 <div className="h-20 bg-gradient-primary rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-white font-bold text-lg">{venture.name.charAt(0)}</span>
