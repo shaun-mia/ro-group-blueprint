@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">RO Group</h3>
             <p className="text-white/80 mb-4 max-w-md">
-              Empowering growth every step. A diversified conglomerate with over 10 brands 
+              Empowering growth every step. A diversified conglomerate with over 10 brands
               across 7 industries, driving innovation and excellence in Bangladesh.
             </p>
             <div className="text-white/70">
@@ -18,7 +18,7 @@ const Footer = () => {
               <p>Email: rogroup57@gmail.com</p>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -28,7 +28,7 @@ const Footer = () => {
               <li><Link to="/contact" className="text-white/80 hover:text-corporate-gold transition-colors">Contact</Link></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-semibold mb-4">Our Brands</h4>
             <ul className="space-y-2">
@@ -39,9 +39,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/70">
-          <p>&copy; 2024 RO Group. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} RO Group. All rights reserved.</p>
         </div>
       </div>
     </footer>
